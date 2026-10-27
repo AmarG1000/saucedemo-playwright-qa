@@ -1,0 +1,26 @@
+{
+  "name": "saucedemo-playwright-qa",
+  "version": "1.0.0",
+  "description": "AI-assisted Playwright and TypeScript QA framework for SauceDemo",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:smoke:headed": "playwright test --grep @smoke --headed",
+    "test:regression": "playwright test --grep @regression",
+    "test:regression:headed": "playwright test --grep @regression --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9"
+  }
+}
